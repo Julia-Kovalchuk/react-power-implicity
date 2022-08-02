@@ -1,0 +1,62 @@
+.nav {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+
+  @media screen and (max-width: 768px) {
+    padding: 25px;
+  }
+
+  @media screen and (max-width: 568px) {
+    padding: 20px;
+    grid-template-columns: none;
+    position: relative;
+  }
+
+  &__logo {
+    @media screen and (max-width: 568px) {
+      position: absolute;
+      left: 30px;
+      top: 15px;
+    }
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    color: #a0a3a7;
+
+    @media screen and (max-width: 568px) {
+      position: relative;
+      margin-bottom: 70px;
+      left: 0px;
+      top: 65px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__button {
+    margin-left: auto;
+    align-self: end;
+    max-width: 159px;
+    padding: 16px 20px;
+    color: #24282e;
+    border-radius: 20px;
+    background: linear-gradient(93.22deg, #e1e1e1 8.37%, #ffffff 99.95%);
+
+    @media screen and (max-width: 568px) {
+      position: absolute;
+      right: 30px;
+      top: 15px;
+      padding: 16px 15px;
+    }
+
+    @media screen and (max-width: 568px) {
+      border-radius: 15px;
+    }
+  }
+}
