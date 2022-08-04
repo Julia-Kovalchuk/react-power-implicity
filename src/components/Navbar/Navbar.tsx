@@ -8,11 +8,25 @@ export const Navbar = () => {
         <Logo className="nav__logo"></Logo>
       </a>
       <ul className="nav__menu">
-        <li className="nav__item">Features</li>
-        <li className="nav__item">Partners</li>
-        <li className="nav__item">Stories</li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Features
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Partners
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Stories
+          </a>
+        </li>
       </ul>
-      <button className="nav__button">Download for free</button>
+      <button className="nav__button" type="button">
+        Download for free
+      </button>
     </nav>
   );
 };

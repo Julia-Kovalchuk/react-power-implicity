@@ -35,6 +35,10 @@
     }
   }
 
+  &__link {
+    color: inherit;
+  }
+
   &__item {
     text-align: center;
   }
@@ -42,6 +46,7 @@
   &__button {
     margin-left: auto;
     align-self: end;
+    cursor: pointer;
     max-width: 159px;
     padding: 16px 20px;
     color: #24282e;
